@@ -11,7 +11,7 @@ st.set_page_config(
 )
 # 使用侧边栏实现多页面显示效果
 with st.sidebar:
-    with open("images/rigth_logo.png", "rb") as f:
+    with open("images//rigth_logo.png", "rb") as f:
         image_1 = f.read()
     st.image(image_1, width=100)
     st.title("请选择页面")
@@ -85,9 +85,9 @@ elif page == "预测分类页面":
 
     with col_logo:
         if not submitted:
-            st.image('images/rigth_logo.png', width=300)
+            st.image('images//rigth_logo.png', width=300)
         else:
-            st.image(f'images/{predict_result_species}.png', width=300)
+            st.image(f'images//{predict_result_species}.png', width=300)
 
 # 读者可结合代码中的注释进行理解，使用 streamlit run streamlit_predict_v2.py 命令运行
 # 整个 Web 应用，简介页面的显示效果如图 8-10 所示。
